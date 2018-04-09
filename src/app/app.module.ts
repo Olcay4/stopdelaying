@@ -1,18 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app.router.module';
+import { RoutingComponents } from './app.router.module';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
+// Angular material modules
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
-import { AppComponent } from './app.component';
-
+import { FrontpageComponent } from './logincomponents/app.frontpage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    FrontpageComponent, RoutingComponents
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [FrontpageComponent]
 })
 export class AppModule { }
