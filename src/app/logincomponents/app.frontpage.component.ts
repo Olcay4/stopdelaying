@@ -6,6 +6,5 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './app.frontpage.component.html'
 })
 export class FrontpageComponent {
-
-
+    hide = true;
 }

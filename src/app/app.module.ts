@@ -6,23 +6,24 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 // Angular material modules
+import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
+// Components
 import { FrontpageComponent } from './logincomponents/app.frontpage.component';
 
 @NgModule({
-  declarations: [
-    FrontpageComponent, RoutingComponents
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
     FormsModule,
+    MaterialModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule
+  ],
+  declarations: [
+    FrontpageComponent,
+    RoutingComponents
   ],
   providers: [],
   bootstrap: [FrontpageComponent]
