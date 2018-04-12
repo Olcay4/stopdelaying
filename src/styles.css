@@ -1,26 +1,27 @@
 @import url(~@angular/material/prebuilt-themes/indigo-pink.css);
-.example-form {
+.front {
+  margin-top: 100px;
   min-width: 150px;
   max-width: 300px;
   width: 100%;
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px; }
-
-.front-page-form {
-  margin-top: 50px; }
-
-.example-full-width {
-  width: 100%; }
-
-.button-row {
-  width: 100%; }
-
-.registerfield {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+  margin-right: auto; }
+  .front .icon {
+    color: #3f51b5;
+    font-size: 24px; }
+  .front .title {
+    color: #3f51b5; }
+  .front form {
+    margin-top: 30px; }
+    .front form mat-form-field {
+      width: 100%; }
+    .front form button {
+      width: 100%; }
+  .front .linkfield {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
 
 /*# sourceMappingURL=styles.css.map */

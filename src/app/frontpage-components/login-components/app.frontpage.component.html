@@ -1,25 +1,27 @@
-<div class="example-form">
+<div class="front">
 
-  <mat-icon>home</mat-icon>
 
-  <h2>Stop Delaying</h2>
+  <h1 class="title">
+    <i class="material-icons icon">alarm</i>
+    Stop Delaying
+  </h1>
 
-  <form class="front-page-form">
+  <form>
 
-    <mat-form-field class="example-full-width">
+    <mat-form-field>
       <input matInput placeholder="Username">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
+    <mat-form-field>
       <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
       <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
     </mat-form-field>
 
-    <button class="button-row" mat-raised-button color="primary">Login</button>
+    <button mat-raised-button color="primary">Login</button>
 
   </form>
 
-  <div class="registerfield">
+  <div class="linkfield">
     <p>Join us,
       <a href="">Sign up now!</a>
     </p>

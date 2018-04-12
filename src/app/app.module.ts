@@ -10,7 +10,7 @@ import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Components
-import { FrontpageComponent } from './logincomponents/app.frontpage.component';
+import { FrontpageComponent } from './frontpage-components/login-components/app.frontpage.component';
 
 @NgModule({
   imports: [
