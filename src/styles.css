@@ -1,26 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url(~@angular/material/prebuilt-themes/indigo-pink.css);
 .example-form {
-    min-width: 150px;
-    max-width: 300px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px
-}
+  min-width: 150px;
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px; }
+
+.front-page-form {
+  margin-top: 50px; }
 
 .example-full-width {
-    width: 100%;
-}
+  width: 100%; }
 
 .button-row {
-    width: 100%;
-}
+  width: 100%; }
 
 .registerfield {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=styles.css.map */
