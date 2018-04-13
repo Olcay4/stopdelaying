@@ -1,32 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FrontpageComponent } from './logincomponents/app.frontpage.component';
 
-/**
-All Link paths come here
- */
+// Frontpage components
+import { FrontpageComponent } from './frontpage-components/login-components/app.frontpage.component';
+import { RegistrationComponent } from './frontpage-components/registration-components/app.registration.component';
+import { DashboardComponent } from './app-components/dashboard-components/app.dashboard-components';
+
 const routes: Routes = [
-    { path: 'frontpage', component: FrontpageComponent },
-
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: 'login', component: FrontpageComponent },
+    { path: 'registration', component: RegistrationComponent },
+    { path: 'dashboard', component: DashboardComponent }
 ];
-
-/**
-Declaration of all components.
- */
-export const RoutingComponents = [
-    FrontpageComponent
-];
-
 
 @NgModule({
-
-    imports: [
-        RouterModule.forRoot(routes)
-    ],
-
-    exports: [
-        RouterModule
-    ]
-
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }
