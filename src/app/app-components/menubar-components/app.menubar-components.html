@@ -1,8 +1,11 @@
 <!-- Menu -->
-<div class="menubar">
-  <button (click)="goback()" mat-icon-button>
+<mat-toolbar class="menubar" color="primary">
+
+  <button class="menubar__goback" (click)="goback()" mat-icon-button>
     <mat-icon>chevron_left</mat-icon>
   </button>
+
+  <span class="menubar__name">{{actionBarTitle}}</span>
 
   <button class="menubar__menu" mat-icon-button [matMenuTriggerFor]="menu">
     <mat-icon>more_vert</mat-icon>
@@ -17,4 +20,5 @@
       <span>Logout</span>
     </button>
   </mat-menu>
-</div>
+
+</mat-toolbar>

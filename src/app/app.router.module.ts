@@ -12,9 +12,9 @@ const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: FrontpageComponent },
     { path: 'registration', component: RegistrationComponent },
-    { path: 'dashboard', component: DashboardComponent },
-    { path: 'task', component: TaskComponent },
-    { path: 'achievement', component: AchievementComponent }
+    { path: 'dashboard', component: DashboardComponent, data: { actionBarTitle: 'Dashboard' } },
+    { path: 'task', component: TaskComponent, data: { actionBarTitle: 'Task' } },
+    { path: 'achievement', component: AchievementComponent, data: { actionBarTitle: 'Achievement' } }
 ];
 
 @NgModule({

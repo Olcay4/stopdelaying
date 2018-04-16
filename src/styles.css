@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: space-around; }
 
-.insideapplication .menubar__menu {
-  float: right; }
+.insideapplication .menubar__name {
+  flex: 1 1 auto; }
 
 /*# sourceMappingURL=styles.css.map */
