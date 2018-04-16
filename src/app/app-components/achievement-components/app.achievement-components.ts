@@ -2,15 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-    selector: 'dashboard-page',
+    selector: 'achievement-page',
     moduleId: module.id,
-    templateUrl: './app.dashboard-components.html'
+    templateUrl: './app.achievement-components.html'
 })
-export class DashboardComponent {
+export class AchievementComponent {
 
     constructor(private router: Router) { }
 
-    logout() {
-        this.router.navigate(['login']);
-    }
 }

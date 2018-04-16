@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 
 import {
-    MatMenuModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule
@@ -13,6 +12,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
     imports: [
@@ -25,7 +27,9 @@ import { MatButtonModule } from '@angular/material/button';
         MatAutocompleteModule,
         MatChipsModule,
         MatInputModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatListModule,
+        MatExpansionModule
     ],
     exports: [
         MatButtonModule,
@@ -37,7 +41,9 @@ import { MatButtonModule } from '@angular/material/button';
         MatAutocompleteModule,
         MatChipsModule,
         MatInputModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatListModule,
+        MatExpansionModule
     ]
 })
 export class MaterialModule { }

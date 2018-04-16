@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FrontpageComponent } from './frontpage-components/login-components/app.frontpage.component';
 import { RegistrationComponent } from './frontpage-components/registration-components/app.registration.component';
 import { DashboardComponent } from './app-components/dashboard-components/app.dashboard-components';
+import { TaskComponent } from './app-components/task-components/app.task-components';
+import { MenubarComponent } from './app-components/menubar-components/app.menubar-components';
+import { AchievementComponent } from './app-components/achievement-components/app.achievement-components';
 
 @NgModule({
   bootstrap: [
@@ -30,7 +33,10 @@ import { DashboardComponent } from './app-components/dashboard-components/app.da
     AppComponent,
     FrontpageComponent,
     RegistrationComponent,
-    DashboardComponent
+    DashboardComponent,
+    TaskComponent,
+    MenubarComponent,
+    AchievementComponent
   ],
   providers: []
 })

@@ -1,0 +1,20 @@
+<!-- Menu -->
+<div class="menubar">
+  <button (click)="goback()" mat-icon-button>
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+
+  <button class="menubar__menu" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button (click)="achievements()" mat-menu-item>
+      <mat-icon>wb_sunny</mat-icon>
+      <span>Achievements</span>
+    </button>
+    <button (click)="logout()" mat-menu-item>
+      <mat-icon>keyboard_tab</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</div>

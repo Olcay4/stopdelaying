@@ -15,4 +15,8 @@ export class FrontpageComponent {
     registrationLink() {
         this.router.navigate(['registration']);
     }
+
+    templink() {
+        this.router.navigate(['dashboard']);
+    }
 }

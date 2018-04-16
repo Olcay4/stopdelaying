@@ -24,4 +24,7 @@
     align-items: center;
     justify-content: space-around; }
 
+.insideapplication .menubar__menu {
+  float: right; }
+
 /*# sourceMappingURL=styles.css.map */
