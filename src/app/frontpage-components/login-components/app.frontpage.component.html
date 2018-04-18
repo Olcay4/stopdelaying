@@ -10,15 +10,15 @@
   <form>
 
     <mat-form-field>
-      <input matInput placeholder="Username">
+      <input name="username" [(ngModel)]="user.username" matInput placeholder="Username">
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+      <input name="password" [(ngModel)]="user.password" matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
       <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
     </mat-form-field>
 
-    <button mat-raised-button color="primary">Login</button>
+    <button mat-raised-button color="primary" (tap)="loginClick()">Login</button>
 
   </form>
 
@@ -26,7 +26,7 @@
   <div class="linkfield">
     <button mat-button color="primary" (click)="registrationLink()">Sign up now!</button>
     <button mat-button color="primary" (click)="templink()">dashboard</button>
-    
+
   </div>
 
 </div>

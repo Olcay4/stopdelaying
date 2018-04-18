@@ -17,6 +17,12 @@ import { TaskComponent } from './app-components/task-components/app.task-compone
 import { MenubarComponent } from './app-components/menubar-components/app.menubar-components';
 import { AchievementComponent } from './app-components/achievement-components/app.achievement-components';
 
+// Models
+import { loginModel } from './models/login.model';
+
+// Services
+import { LoginService } from './service/login-service';
+
 @NgModule({
   bootstrap: [
     AppComponent
@@ -38,7 +44,9 @@ import { AchievementComponent } from './app-components/achievement-components/ap
     MenubarComponent,
     AchievementComponent
   ],
-  providers: []
+  providers: [
+    loginModel
+  ]
 })
 
 export class AppModule { }
