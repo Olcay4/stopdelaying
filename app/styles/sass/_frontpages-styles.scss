@@ -9,21 +9,24 @@
     margin-right: auto;
 
     .icon {
-        color: #3f51b5;
-        font-size: 24px;
+        color: #009688;
+        font-size: 30px;
     }
 
     // Title of the front pages
     .title {
-        color: #3f51b5;
+        color: #009688;
     }
 
     // form-mid section design
     form {
         margin-top: 30px;
+        
 
-        mat-form-field {
+        .mdl-textfield__label {
+            font-size: 15px;
             width: 100%;
+            
         }
 
         button {
@@ -33,9 +36,13 @@
 
     // Link fields below the form
     .linkfield {
+        width: 100%;
+        color: #009688;
         margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+    }
+
+    // warning message
+    .message {
+        background-color: red;
     }
 }

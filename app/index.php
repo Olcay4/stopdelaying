@@ -1,25 +1,42 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Stopdelaying</title>
-  <base href="/login">
+  <head>
+    <?php include 'header.php';?>
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="print">
-</head>
+  <body>
 
-<body>
-  <section class="mat-typography">
-    <!-- Colored FAB button -->
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
-  <i class="material-icons">add</i>
-</button>
-  </section>
-</body>
+    <div class="front">
+
+      <!-- Title -->
+      <h4 class="title">
+        <i class="material-icons icon">alarm</i>
+        Stop Delaying
+      </h4>
+
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">Password</label>
+        </div>
+
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Login
+        </button>
+
+      </form>
+
+      <a href="registration.php"> 
+        <button class="mdl-button mdl-js-button linkfield">Sign up now!</button>
+      </a>
+
+    </div>
+
+  </body>
 
 </html>
