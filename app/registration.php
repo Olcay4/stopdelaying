@@ -28,8 +28,8 @@ if (isset($_POST['accountRegistration'])) {
 
     } else { // voer gegevens in database, voor standaard geberuiker.
 
-        $query = "INSERT INTO user ( username, password)
-          VALUES ( '$username','$password1');";
+        $query = "INSERT INTO user ( username, password, points)
+          VALUES ( '$username','$password1', 0);";
         mysqli_query($db, $query);
         mysqli_close($db);
         $message = "Registration success, feel free to go back to the login page";
