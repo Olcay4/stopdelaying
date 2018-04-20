@@ -58,11 +58,26 @@ if (!($resultaat = mysqli_query($db, $pakquery))) {
             </nav>
         </div>
         <main class="mdl-layout__content">
-            
-            <?=$points?>
+            <div class="insideapplication">
 
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop pointsstyle">
+                        <use xlink:href="#piechart" mask="url(#piemask)" />
+                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.5" fill="#ffffff" text-anchor="middle" dy="0.1"><?=$points?><tspan font-size="0.2" dy="-0.07">points</tspan></text>
+                    </svg>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    You can see your archived points via this tab. You can always share your score to show how productive you are.
+                </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/intent/tweet?text=I've%20earned%20'<?=$points?>'%20points%20on%20stop%20delaying%20app,%20you%20can%20also%20join%20the%20app">
+                        Share your points on twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
-
 </body>
 </html>
