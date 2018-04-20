@@ -5,7 +5,6 @@ require "database/config.php";
 $bericht = '';
 $getid = $_SESSION['id'];
 
-
 // pak de gebruiker gegevens op.
 $pakquery = "select * from user WHERE id ='$getid' ";
 
@@ -14,9 +13,10 @@ if (!($resultaat = mysqli_query($db, $pakquery))) {
     $message = "Error," . mysqli_error($db);
 } else {
     while ($row = mysqli_fetch_assoc($resultaat)) {
-        
+
         $username = $row['username'];
         $password = $row['password'];
+        $points = $row['points'];
         $id = $row['id'];
     }
 }
@@ -42,7 +42,7 @@ if (!($resultaat = mysqli_query($db, $pakquery))) {
         </header>
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">Menu</span>
-            
+
             <nav class="mdl-navigation">
 
                 <a class="mdl-navigation__link" href="dashboard.php">
@@ -54,14 +54,13 @@ if (!($resultaat = mysqli_query($db, $pakquery))) {
                     <i class="material-icons icon">keyboard_tab</i>
                     &nbsp;&nbsp;&nbsp; Logout
                 </a>
-                
+
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div class="insideapplication">
+            
+            <?=$points?>
 
-                Achievments
-            </div>
         </main>
     </div>
 

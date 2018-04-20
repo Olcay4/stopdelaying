@@ -59,7 +59,6 @@ if (isset($_POST['opslaantask'])) {
     <?php include 'header.php';?>
 </head>
 <body>
-    <script src="js/mdDateTimePicker.js"></script>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -92,7 +91,7 @@ if (isset($_POST['opslaantask'])) {
 
                 <h4 class="insideTitle">Tasks</h4>
 
-                <ul class="demo-list-item mdl-list">
+                <ul class="demo-list-item mdl-list dashboard">
                     <?php if (!empty($datums)) {?>
                         <?php foreach ($datums as $row) {?>
 
@@ -100,8 +99,15 @@ if (isset($_POST['opslaantask'])) {
                                 <span class="mdl-list__item-primary-content">
                                     <?=$row['taskname'];?><br><br>
                                     <?=$row['date'];?>
+
                                 </span>
-                                <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">forward</i></a>
+                                <form method="post" action="dashboard.php">
+                                    <input type="hidden" value="<?=$row['idtask'];?>" name='taskid'/>
+                                    <!-- <button type="submit" name="sumittask">go</button> -->
+                                    <a name="sumittask" class="mdl-list__item-secondary-action" href='task.php?task_id=<?=$row['idtask'];?>'>
+                                        <i class="material-icons">forward</i>
+                                    </a>
+                                </form>
                             </li>
 
                         <?php }?>

@@ -1,20 +1,36 @@
-// CSS design when the user is been loggen in.
+// CSS design when the user is been loggedin.
 .insideapplication {
+
+    .taskdeletebtn{
+    
+        margin-top: 55px;
+    }
+
+    // Title design
     .insideTitle {
         width: 100%;
         margin-left: 5%;
     }
-    .demo-list-item {
+
+
+    .dashboard {
         width: 80%;
         margin-left: 5%;
         margin-right: 5%;
+    } 
+
+    .task {
+        padding-top: 30px;
+        margin: auto;
+        width: 55%;
+
     }
+    
+    // Create a new task designs
     .taskcreator {
         margin-left: 5%;
         width: 80%;
-
         &__list {
-           
             width: 80%;
             margin-left: 5%;
             margin-bottom: 50px;
